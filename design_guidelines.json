@@ -1,0 +1,151 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "LearnAfrikaans",
+      "persona": "E1 - The Anti-AI Designer",
+      "theme": "Midnight Safari (Dark Mode First)",
+      "core_philosophy": "Gamified Immersion. Dark backgrounds, neon accents, glass surfaces. No boring lists."
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Outfit, sans-serif",
+        "body": "DM Sans, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "installation": "Import from Google Fonts: https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;600;800&display=swap",
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-extrabold tracking-tight leading-none",
+        "h2": "text-3xl md:text-5xl font-bold tracking-tight",
+        "h3": "text-2xl md:text-3xl font-semibold tracking-normal",
+        "body_lg": "text-lg md:text-xl font-medium leading-relaxed",
+        "body": "text-base font-normal leading-relaxed text-muted-foreground",
+        "caption": "text-xs font-bold tracking-widest uppercase text-muted-foreground/60"
+      }
+    },
+    "colors": {
+      "palette_name": "Electric Night",
+      "css_variables": {
+        "root": {
+          "background": "240 10% 3.9%",
+          "foreground": "0 0% 98%",
+          "card": "240 10% 3.9%",
+          "card_foreground": "0 0% 98%",
+          "popover": "240 10% 3.9%",
+          "popover_foreground": "0 0% 98%",
+          "primary": "24 94% 53%",
+          "primary_foreground": "0 0% 9%",
+          "secondary": "174 80% 40%",
+          "secondary_foreground": "0 0% 98%",
+          "muted": "240 3.7% 15.9%",
+          "muted_foreground": "240 5% 64.9%",
+          "accent": "240 3.7% 15.9%",
+          "accent_foreground": "0 0% 98%",
+          "destructive": "0 62.8% 30.6%",
+          "destructive_foreground": "0 0% 98%",
+          "border": "240 3.7% 15.9%",
+          "input": "240 3.7% 15.9%",
+          "ring": "24 94% 53%"
+        }
+      },
+      "usage": {
+        "primary": "Main CTAs, Streak Fire, Active States (Electric Orange)",
+        "secondary": "Success states, Progress bars, Nature elements (Deep Teal)",
+        "background": "Rich Black (Not pure black, tinted with blue)",
+        "surface": "Glassmorphism: bg-black/40 backdrop-blur-xl border-white/10"
+      }
+    },
+    "visual_enhancers": {
+      "glassmorphism": "backdrop-blur-xl bg-black/40 border border-white/10 shadow-2xl",
+      "gradients": {
+        "hero_glow": "bg-gradient-to-tr from-orange-500/20 via-purple-500/10 to-transparent blur-3xl",
+        "card_hover": "hover:bg-white/5 transition-colors duration-300"
+      },
+      "borders": "1px solid rgba(255,255,255,0.1)",
+      "shadows": "shadow-[0_8px_30px_rgb(0,0,0,0.12)]",
+      "textures": "Use a subtle noise overlay on the main background to prevent banding and add 'film' quality."
+    },
+    "layout_strategies": {
+      "dashboard": {
+        "type": "Bento Grid",
+        "classes": "grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 p-4 md:p-8",
+        "items": {
+          "hero_stat": "col-span-1 md:col-span-2 row-span-2",
+          "list_feed": "col-span-1 row-span-2",
+          "standard_card": "col-span-1"
+        }
+      },
+      "landing_page": {
+        "type": "Asymmetric Hero",
+        "structure": "Text left (60%), Visual right (40%) overlapping or floating."
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "rounded-full px-8 py-6 font-bold text-lg shadow-[0_0_20px_rgba(249,115,22,0.3)] hover:shadow-[0_0_30px_rgba(249,115,22,0.5)] transition-all hover:scale-105 active:scale-95",
+        "secondary": "rounded-full px-6 py-4 font-medium border border-white/10 hover:bg-white/5 transition-all"
+      },
+      "cards": {
+        "lesson": "group relative overflow-hidden rounded-3xl border border-white/10 bg-card/50 p-6 hover:border-primary/50 transition-all duration-500",
+        "stat": "rounded-2xl bg-muted/50 p-6 border border-white/5"
+      },
+      "inputs": {
+        "default": "h-12 rounded-xl bg-muted/50 border-white/10 focus:border-primary focus:ring-primary/20"
+      }
+    },
+    "motion": {
+      "philosophy": "Physics-based, snappy but smooth.",
+      "transitions": "transition-all duration-300 ease-out",
+      "hover_effects": "hover:-translate-y-1 hover:shadow-lg",
+      "page_transition": "initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }}"
+    },
+    "accessibility": {
+      "contrast": "Ensure text is WCAG AA compliant. Use lighter text (gray-200) on dark backgrounds, never dark gray.",
+      "focus_states": "Visible ring-2 ring-primary ring-offset-2 ring-offset-background",
+      "reduced_motion": "Respect prefers-reduced-motion media query."
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px or 2px. Use 'text-primary' for active icons."
+    },
+    "image_urls": {
+      "landing_hero": {
+        "url": "https://images.unsplash.com/photo-1530187589563-1ff5b061d4f9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHw0fHxTb3V0aCUyMEFmcmljYSUyMGxhbmRzY2FwZSUyMGRyYW1hdGljJTIwbGlnaHRpbmd8ZW58MHx8fHwxNzczNDMyNjQxfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Dramatic long exposure of Table Mountain/Lion's Head at night. Use as a subtle background with heavy overlay for the Welcome/Login screen.",
+        "category": "background"
+      },
+      "community_vibe": {
+        "url": "https://images.unsplash.com/photo-1758272959994-f1a4beffa257?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwzfHxkaXZlcnNlJTIweW91bmclMjBwZW9wbGUlMjB0YWxraW5nJTIwaGFwcHklMjBjbG9zZSUyMHVwfGVufDB8fHx8MTc3MzQzMjY0Nnww&ixlib=rb-4.1.0&q=85",
+        "description": "Diverse group of friends taking a selfie. Use for the 'Community' or 'Leaderboard' promo section.",
+        "category": "content"
+      },
+      "learning_moment": {
+        "url": "https://images.unsplash.com/photo-1758613171146-8d15cfacc14e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHxkaXZlcnNlJTIweW91bmclMjBwZW9wbGUlMjB0YWxraW5nJTIwaGFwcHklMjBjbG9zZSUyMHVwfGVufDB8fHx8MTc3MzQzMjY0Nnww&ixlib=rb-4.1.0&q=85",
+        "description": "Two young women smiling/talking. Use for 'Chatbot' or 'Speaking Practice' feature visual.",
+        "category": "content"
+      },
+      "scenic_accent": {
+        "url": "https://images.unsplash.com/photo-1746876269545-c23ecff55722?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwzfHxTb3V0aCUyMEFmcmljYSUyMGxhbmRzY2FwZSUyMGRyYW1hdGljJTIwbGlnaHRpbmd8ZW58MHx8fHwxNzczNDMyNjQxfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Dramatic sunset over ocean/mountain. Use for 'Level Up' or 'Achievement' backgrounds.",
+        "category": "background"
+      }
+    },
+    "instructions_to_main_agent": [
+      "1. THEME SETUP: Immediately override the CSS variables in /app/frontend/src/index.css with the 'Electric Night' palette provided above. The default shadcn zinc palette is too boring.",
+      "2. FONT SETUP: Add the Google Fonts import to /app/frontend/src/index.css or public/index.html immediately.",
+      "3. LAYOUT: Do not use standard 'Container' for the dashboard. Use a full-width layout with a max-width wrapper (max-w-7xl) and the Bento Grid strategy.",
+      "4. COMPONENTS: When using Shadcn components (Cards, Dialogs), ALWAYS add 'border-white/10 bg-black/40 backdrop-blur-xl' to their classNames to achieve the glass look.",
+      "5. NO EMOJIS: Use Lucide-React icons for everything. E.g., instead of 🏆, use <Trophy className='w-6 h-6 text-yellow-500' />.",
+      "6. DATA-TESTID: Every interactive element (buttons, inputs, links) MUST have a data-testid attribute (e.g., data-testid='login-submit').",
+      "7. IMAGES: Use the provided Unsplash URLs. Do not use placeholders.",
+      "8. BORDERS: Avoid thick borders. Use 1px borders with low opacity (white/10) to define edges without clutter.",
+      "9. GRADIENTS: Use the 'hero_glow' gradient behind the main headline on the landing page to create depth."
+    ],
+    "universal_guidelines": [
+      "Avoid 'AI Slop' - generic centered layouts.",
+      "Create depth through z-index and layered glass elements.",
+      "Use 2-3x more spacing than feels comfortable (p-8, p-12).",
+      "Micro-animations on every interaction (hover, focus, active).",
+      "Never use pure black (#000000) - use the rich black defined in colors."
+    ]
+  }
+}
